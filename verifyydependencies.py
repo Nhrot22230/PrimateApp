@@ -17,7 +17,7 @@ libraries = [
     "soundfile",
     "matplotlib",
     "tensorflow",
-    "tensorflow_io",
+    "tensorflow-io",
     "io",
 ]
 
