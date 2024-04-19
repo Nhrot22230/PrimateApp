@@ -30,21 +30,6 @@ def get_positives_subsets(data: list):
     if current_subset:
         subsets.append( (current_subset, starIndex, endIndex) )
     
-    print('Original Data:')
-    
-    str_data = "["
-    for d in data:
-        str_data += str(d.round(2)) + ', '
-    str_data += ']'
-    print(str_data)
-
-    print('Subsets:')
-    str_subsets = "["
-    for subset in subsets:
-        str_subsets += '(' + str(subset[1]) + ', ' + str(subset[2]) + '), '
-    str_subsets += ']'
-    print(str_subsets)
-    
     return subsets
 
 def generateAnnotationDataFrame(data):

@@ -2,7 +2,6 @@ import os
 import librosa
 import soundfile as sf
 
-
 class AudioManager:
     def __init__(self):
         pass

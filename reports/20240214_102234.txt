@@ -1,0 +1,6 @@
+Selection	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Call Type	Score	Rating
+1	1.2	1.5	6500.0	12500.0	CS	0.71	B
+2	1.67	2.02	6500.0	12500.0	CS	0.75	B
+3	2.3	2.7	6500.0	12500.0	CS	0.76	B
+4	2.92	3.27	6500.0	12500.0	CS	0.62	C
+5	3.45	3.75	6500.0	12500.0	CS	0.71	B

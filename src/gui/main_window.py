@@ -43,6 +43,7 @@ class MainWindow(ThemedTk):
 
     def updateAudioFile(self, value):
         self.canvas_manager.set_file(value)
+        self.canvas_manager.plot_spectrogram()
         self.model_manager.set_file("audio_files/" + value)
         self.reportmanager.setfilename(value[:-4] + ".txt")
 

@@ -28,7 +28,9 @@ class FileManager:
             list: A list of file names in the directory.
         """
         if self.verify_directory(directory):
-            return os.listdir(directory)
+            files = os.listdir(directory)
+            files.sort()
+            return files
         else:
             return []
 

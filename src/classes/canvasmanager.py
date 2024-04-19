@@ -1,5 +1,6 @@
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
+import tkinter as tk
 
 class MatplotlibCanvasManager:
     def __init__(self, master):
@@ -10,7 +11,7 @@ class MatplotlibCanvasManager:
         fig, ax = plot_func(*args)
         canvas = FigureCanvasTkAgg(fig, master=self.master)
         canvas.draw()
-        canvas.get_tk_widget().pack()
+        canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.X)
         self.canvas[fig_id] = (fig, canvas)
         return canvas
 
